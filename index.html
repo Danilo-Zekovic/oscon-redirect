@@ -48,23 +48,24 @@
 			on May 17, 2016.
 		</p>
 
-    <h2>Requierments</h2>
+    <h2>Requirements</h2>
     <ul style="list-style-type:circle">
       <li>Node</li>
-      <li>MongoDB (Only if you want to use local assets, data)</li>
+      <li>MongoDB (Optional if you would like to keep image data local)
     </ul>
 
     <h2>Vagrant</h2>
-    <h4>Follow these 12 steps to get your Vagrant machine running</h4>
+    <h4>Follow these steps to get your Vagrant machine running</h4>
     <ol>
-      <li>Download and unzip our Vagrant box <a href="./nodeVagrant.zip" download>>>>>DOWNLOAD<<<<</a> </li>
-      <li>You have to boot twice (vagrant up; vagrant halt)</li>
-      <li>
-        VirtualBox Console, select the oscon-box -> settings -> storage ->
+      <li>Download and unzip our custom Vagrant box <a href="./nodeVagrant.zip" download>>>>>DOWNLOAD LINK (~120MB) <<<<</a> </li>
+      <li>Bring up the box (vagrant up); allow installation to complete</li>
+      <li>Halt the box (vagrant halt)</li>
+      <li>Install the guest additions as follows:<br>
+        In the VirtualBox console, select the oscon-box -> settings -> storage ->
         add new storage attachment -> add optical drive -> leave it empty <br>
         <img src="img/pic1.jpg" class="img-thumbnail img-responsive">
       </li>
-      <li>vagrant up</li>
+      <li>Reboot (vagrant up)</li>
       <li>
         Login screen, leave everything as it is and use password "vagrant"<br>
         <img src="img/pic2.jpg" class="img-thumbnail img-responsive">
@@ -76,7 +77,7 @@
       <li>sudo mkdir /mnt/cdrom</li>
       <li>sudo mount /dev/sr0 /mnt/cdrom</li>
       <li>cd /mnt/cdrom</li>
-      <li>sudo ./VBoxLinuxAdditions.run (not dot-slash at beginning)</li>
+      <li>sudo ./VBoxLinuxAdditions.run (NOTE: "dot-slash" at beginning)</li>
       <li>sudo umount /mnt/cdrom</li>
       <li>On your host machine to shut down run :$ vagrant halt</li>
     </ol>
