@@ -24,6 +24,10 @@
     li {
       font-size: 140%;
     }
+
+    img {
+      height: 440px !important;
+    }
   </style>
 
 </head>
@@ -34,8 +38,8 @@
 
     <h1>SPA Bootcamp Instructions</h1>
 
-    <p>Hello!  There will be two ways to run our SPA and access data;  a
-downloaded local version or a pre-constructed cloud version.  The
+    <p>Hello!  There will be two ways to run our SPA and access data; first fetches data f are
+      .  The
 local version will require a few building steps, while the cloud is
 pre-constructed and will not require any extra work.</p>
     <p>
@@ -50,13 +54,24 @@ on May 15, 2016.  These programs are:</p>
     </ul>
 
     <h2>Vagrant</h2>
+    <h4>Follow these 12 steps to get your Vagrant machine running</h4>
     <ol>
       <li>Download and unzip our Vagrant box <a href="./nodeVagrant.zip" download>>>>>DOWNLOAD<<<<</a> </li>
       <li>You have to boot twice (vagrant up; vagrant halt)</li>
-      <li>VirtualBox Console, select the oscon-box -> settings -> storage -> add new storage attachment -> add optical drive -> leave it empty</li>
+      <li>
+        VirtualBox Console, select the oscon-box -> settings -> storage ->
+        add new storage attachment -> add optical drive -> leave it empty <br>
+        <img src="img/pic1.jpg" class="img-thumbnail img-responsive">
+      </li>
       <li>vagrant up</li>
-      <li>Login screen, leave everything as it is and use password "vagrant"</li>
-      <li>Top menu -> Devices -> Insert Guest additions CD image</li>
+      <li>
+        Login screen, leave everything as it is and use password "vagrant"<br>
+        <img src="img/pic2.jpg" class="img-thumbnail img-responsive">
+      </li>
+      <li>
+        Top menu -> Devices -> Insert Guest additions CD image<br>
+        <img src="img/pic3.jpg" class="img-thumbnail img-responsive">
+      </li>
       <li>sudo mkdir /mnt/cdrom</li>
       <li>sudo mount /dev/sr0 /mnt/cdrom</li>
       <li>cd /mnt/cdrom</li>
